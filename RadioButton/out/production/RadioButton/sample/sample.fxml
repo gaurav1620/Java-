@@ -1,0 +1,46 @@
+<!--?import javafx.geometry.Insets?!-->
+<?import javafx.scene.layout.GridPane?>
+
+<!--?import javafx.scene.control.Button?!-->
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<!--?import javafx.scene.control.TextField?!-->
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.VBox?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <Label GridPane.rowIndex="0" GridPane.columnIndex="0" text="Without toggle group! :"/>
+
+
+    <fx:define>
+        <ToggleGroup fx:id="MYToggleGroup"/>
+    </fx:define>
+    <RadioButton GridPane.rowIndex="1" GridPane.columnIndex="0" text="Zero"/>
+    <RadioButton GridPane.rowIndex="2" GridPane.columnIndex="0" text="One"/>
+    <RadioButton GridPane.rowIndex="3" GridPane.columnIndex="0" text="Two"/>
+    <RadioButton GridPane.rowIndex="4" GridPane.columnIndex="0" text="Three"/>
+
+    <Label GridPane.rowIndex="0" GridPane.columnIndex="1" text="With toggle group!(Also Two is already selected"/>
+    <RadioButton GridPane.rowIndex="1" GridPane.columnIndex="1" text="Zero" toggleGroup="$MYToggleGroup"/>
+    <RadioButton GridPane.rowIndex="2" GridPane.columnIndex="1" text="One" toggleGroup="$MYToggleGroup"/>
+    <RadioButton GridPane.rowIndex="3" GridPane.columnIndex="1" text="Two" toggleGroup="$MYToggleGroup" selected="true"/>
+    <RadioButton GridPane.rowIndex="4" GridPane.columnIndex="1" text="Three" toggleGroup="$MYToggleGroup"/>
+
+    <Label GridPane.rowIndex="9" GridPane.columnIndex="0" text="Checkbox"/>
+    <CheckBox text="Subscribe" GridPane.rowIndex="10" GridPane.columnIndex="0"/>
+
+
+    <Label GridPane.rowIndex="0" GridPane.columnIndex="3" text="Toggle buttons"/>
+    <VBox  GridPane.rowIndex="1" GridPane.columnIndex="3">
+        <fx:define>
+            <ToggleGroup fx:id="MYToggleGroup2"/>
+        </fx:define>
+        <ToggleButton text="ToggleMe-0" toggleGroup="$MYToggleGroup2"/>
+        <ToggleButton text="ToggleMe-1" toggleGroup="$MYToggleGroup2"/>
+        <ToggleButton text="ToggleMe-2" toggleGroup="$MYToggleGroup2"/>
+    </VBox>
+
+
+</GridPane>
