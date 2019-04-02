@@ -1,0 +1,14 @@
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.control.Button?>
+<FlowPane fx:controller="sample.Controller"
+          xmlns:fx="https://javafx.com/fxml" orientation="HORIZONTAL">
+    <Button text="ButtonOne"/>
+    <Button text="ButtonTwo"/>
+    <Button text="ButtonThree"/>
+    <Button text="ButtonFour"/>
+    <Button text="ButtonFive"/>
+    <Button text="ButtonSix"/>
+    <Button text="ButtonSeven"/>
+    <Button text="ButtonEight"/>
+    <Button text="ButtonNine"/>
+</FlowPane>
