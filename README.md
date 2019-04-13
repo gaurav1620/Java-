@@ -1,2 +1,2 @@
 # Java-
-The complete android java dev course
+Java OOP, JavaFx, Exception handling, I/O etc.
